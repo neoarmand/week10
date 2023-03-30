@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Order Details</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/style.css">  <!--Style CSS-->
+        <link rel="stylesheet" href="../CSS/media.css"/> <!--Responsive CSS-->
+        <script> 
+        function selectChange(element) { 
+            if (element.options[element.selectedIndex].value == "16oz Supersize = 17.50€")
+            alert("This option affects your health")
+        }                                               
+        function checkDiscount() {
+            var text1 = document.getElementById("discountcode").value;
+        
+            if (text1 == "extracheese") {
+                alert("Discount 10% applied");
+            } else {
+                alert("Invalid code entered.");
+            }
+        }
+        </script>                                        <!--Javascripts-->
+    </head>
+    <body id="body2">
+        <div id="div10"></div>
+        <div id="div7">
+            <a href="../index.html"><img id=logowow src="../Images/wowlogo.png" alt="logowow"></a>
+        </div><br><br>
+        <div id="div8">
+            <br><a href="../index.html"><h2 class="menu">HOME</h2></a><br>
+            <a href="../Pages/Page1.html"><h2 class="menu">MENU</h2></a>
+        </div>
+        <div id="div1">
+            <table cellspacing ="8">
+                <form name="form1" action="#" onsubmit="checkDiscount()">
+                    <tr>
+                        <td>
+                            <h3 class="labels">Order details</h3><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labels">Username:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="label1" type="text" name="user" placeholder="Please enter your username" size="39"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labels">Password:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input class="label1" type="password" name="password" size="39" placeholder="Please enter your password" minlength="9" maxlength="9"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labels">Hamburger Size:</label>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <select id="select1" name="Hamsize" onchange="selectChange(this)">
+                                <option name="option">Choose an option</option>
+                                <option name="6oz Large">6oz Large = 7€</option>
+                                <option name="10oz Extra Large">10oz Extra Large = 9€</option>
+                                <option name="16oz Supersize" onchange="myAlert()">16oz Supersize = 17.50€</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labels">Quantity of Hamburger(s):</label>
+                        </td><br>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <input class="label" type="number" name="qhambur" size="39"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labels">Discount code:</label>
+                        </td><br>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <input id="discountcode" type="text" name="dcode" size="39" placeholder="Insert the discount code"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="labels">Total cost:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="reset" type="reset">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+        <div id="div9"><p>Copyright WOW BURGER COMPANY</p></div>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+/*Index*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.body1{
+    background-image: url("../Images/wowburger1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.container0 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1.0;
+    box-shadow: 0 0 20px red;
+}
+.container0:hover {
+    opacity: 50%;
+}
+
+/*Page 1*/
+.container {
+    background-color: rgb(227, 39, 39);
+}
+#div3{width: 18%;
+    height: 2cm;
+    background-color: rgb(255, 255, 59);
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+#logowow{
+    width: 100%;
+    padding: 2px;
+}
+#div6{
+    border-radius: 25px;
+    width: 45%;
+    height: 1.3cm;
+    margin:auto;
+    background-color: rgb(255, 255, 59);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px}
+#div5{
+    width: 7%;
+    height: 17cm;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 59); 
+    text-align:center;
+    float:left;
+    margin-left: 15px;
+}
+.burger{
+    padding:7px;
+}
+.burger1{
+    max-width: 100%;
+    height: 100%;
+    padding:3px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+h2{
+    color:black
+}
+#div2 {
+    width: 90%;
+    float:left;
+    margin-left: 10px;
+    height: 17cm;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.menu{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#div4{
+    width: 100%;
+    height: 1.5cm;
+    background-color: rgb(255, 255, 59);
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;border-radius: 25px
+}
+
+/*Page2*/
+#body2 {
+    background-color: rgb(227, 39, 39);
+}
+#div7{
+    width: 18%;
+    height: 2cm;
+    background-color: rgb(255, 255, 59);
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+#div8{
+    border-radius: 25px;
+    width: 7%;
+    height: 13cm;
+    background-color: rgb(255, 255, 59); 
+    text-align:center;
+    float:left;
+    margin-left: 50px;
+}
+#div1 {
+    border-radius: 25px;
+    width: 30%;
+    height: 12cm;
+    background-color: rgb(255, 255, 59);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labels {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#div9{
+    border-radius: 25px;
+    width: 100%;
+    height: 1.5cm;
+    background-color: rgb(255, 255, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
